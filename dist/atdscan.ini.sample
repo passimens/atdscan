@@ -1,15 +1,15 @@
 # ------! The file should be UTF8-encoded !------
 [connection]
 atdhost = 169.254.254.1 ;	ATD server to use (with optional port): e.g. "1.2.3.4:1234"
-username = atduser ; 			ATD user with REST-API access
-password = atdpass ;		 	ATD user password for authentication
+username = atduser ; 		ATD user with REST-API access
+password = atdpass ;		ATD user password for authentication
 
 [scanning]
-threads = 10 ;					number of scanning threads (should be aligned with ATD load and licenses)
+threads = 10 ;			number of scanning threads (should be aligned with ATD load and licenses)
 reanalyze = False ; 		reanalyze sample even if previously analyzed by ATD
-cleanat = 0 ; 					severity threshold for cleaning action, 0 - to disable cleaning
-quardir = C:\atdquar\ ; quarantine folder to put infected files, required for cleaning
-minsize = 1000 ;				minimum file size to scan
+cleanat = 0 ; 			severity threshold for cleaning action, 0 - to disable cleaning
+quardir = C:\atdquar\ ; 	quarantine folder to put infected files, required for cleaning
+minsize = 1000 ;		minimum file size to scan
 maxsize = 50000000 ;		maximum file size to scan
 
 # file extensions to scan
@@ -25,9 +25,9 @@ exclpaths: c:\path1*
 	D:\path3
 
 [reporting]
-scanlog = atdscan.log ; scan log file name, empty filename - write to stdout
-drillat = 3 ; 					severity threshold for drilldown into archived files
+scanlog = atdscan.log ; 	scan log file name, empty filename - write to stdout
+drillat = 3 ; 			severity threshold for drilldown into archived files
 
 [cmdline]
-inchset = cp1251 ; 			charset to use while parsing command line
+inchset = cp1251 ; 		charset to use while parsing command line
 #outchset = cp866 ; 		charset to use for stdout
